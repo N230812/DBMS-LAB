@@ -82,7 +82,6 @@ select * from Financial_year;
 select * from Income_Record;
 select * from Income_Category;
 select * from taxpayer;
--- part D
 INSERT INTO Income_Category
 (category_id, category_name, description, taxable)
 VALUES
@@ -103,8 +102,6 @@ SET is_active = TRUE
 WHERE taxpayer_id = 106;
 DELETE FROM Taxpayer
 WHERE taxpayer_id = 107;
-
---part E
 ALTER TABLE Taxpayer
 ADD phone_number VARCHAR(15);
 ALTER TABLE Income_Record
@@ -123,7 +120,6 @@ VALUES
 TRUNCATE TABLE Tax_Office;
 DROP TABLE Tax_Office;
 select * from Tax_Office;
--- part F
 INSERT INTO Taxpayer
 (taxpayer_id, pan_number, full_name, date_of_birth, occupation, annual_income, email, is_active)
 VALUES
